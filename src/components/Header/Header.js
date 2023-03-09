@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Header.css';
 
 const Header = () => {
     return (
-        <div className='w-11/12 mx-auto'>
+        <div className='w-11/12 mx-auto sticky left-0 top-0 z-50'>
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -15,8 +16,11 @@ const Header = () => {
                             <Link className='mb-2' to='/home'>Home</Link>
                             <Link className='mb-2' to='/professionalSkills'>Professional Skills</Link>
                             <Link className='mb-2' to='/services'>Services</Link>
+                            <Link className='mb-2' to='/tutorial'>Tutorial</Link>
+                            <Link className='mb-2' to='/projects'>Projects</Link>
                             <Link className='mb-2' to='/portfolio'>Portfolio</Link>
                             <Link className='mb-2' to='/about'>About</Link>
+                            <Link className='mb-2' to='/contact'>Contact</Link>
 
                         </ul>
                     </div>
@@ -28,8 +32,11 @@ const Header = () => {
                         <Link className='ml-6' to='/home'>Home</Link>
                         <Link className='ml-6' to='/professionalSkills'>Professional Skills</Link>
                         <Link className='ml-6' to='/services'>Services</Link>
+                        <Link className='ml-6' to='/tutorial'>Tutorial</Link>
+                        <Link className='ml-6' to='/projects'>Projects</Link>
                         <Link className='ml-6' to='/portfolio'>Portfolio</Link>
                         <Link className='ml-6' to='/about'>About</Link>
+                        <Link className='ml-6' to='/contact'>Contact</Link>
 
                     </ul>
                 </div>
